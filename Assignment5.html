@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<head>
+<script>
+
+function vow(){
+
+var vowels = {a:"a",b:"e",c:"i", d:"o",e:"u"};
+var alpha = document.getElementById("alpha").value;
+var var1 = alpha.toLowerCase();
+var x=0;
+var y=0;
+for(x in vowels) {
+if(var1 == vowels[x]){
+y=1;
+break;
+}
+}
+if(y==1)
+alert("Vowel");
+ else 
+alert("Not a vowel");
+
+}
+</script>
+</head>
+<body>
+<p>Enter alphabet: <input type="text" id="alpha"></p>
+<input type="button" onclick="vow()" value="Check vowel">
+ </body>
+
+</html>

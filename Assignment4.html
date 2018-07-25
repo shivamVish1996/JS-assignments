@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<head>
+<script>
+
+function cal(){
+var num = document.getElementById("num1").value;
+var mul=0;
+for(i=1;i<=100;i++){
+mul = num*i;
+var r = confirm(num+" * " +i+" = "+mul);
+if(r != true){
+break;
+}
+}
+}
+
+</script>
+</head>
+<body>
+
+<p>Enter number: <input type="text" id="num1"></p>
+<input type="button" onclick="cal()" value="Multiplication table">
+
+ </body>
+
+</html>

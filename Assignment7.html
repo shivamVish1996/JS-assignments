@@ -1,0 +1,27 @@
+<html>
+<head>
+	<title>JS Assignment 7</title>
+
+	<script type="text/javascript">
+
+	function fact(){
+
+		var num = Number(document.getElementById("num").value);
+		var i=1;
+		var fact=1;
+		for(i=1;i<=num;i++)
+			fact = fact * i;
+
+		alert("Factorial: "+fact);
+
+	}
+
+	</script>
+</head>
+<body>
+
+Enter Number: <input type="text" id="num"/> <br>
+	<input type="button" value="Get Factorial" onclick="fact()"/>
+
+</body>
+</html>

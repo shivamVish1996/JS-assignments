@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<head>
+<script>
+
+function div(){
+var first = document.getElementById("first").value;
+var second = document.getElementById("second").value;
+if(second == 0 ) {
+alert("Warning!!!Second number cannot be ZERO");
+}else {
+var div = first/second;
+document.write("Division: " +div );
+}
+}
+
+</script>
+</head>
+<body>
+<p>Enter first Number: <input id="first" type="text"></p> 
+<p>Enter Second Number: <input id="second" type="text"></p> 
+<input type="button" value="Calc Division" onclick="div()">
+ </body>
+
+</html>
